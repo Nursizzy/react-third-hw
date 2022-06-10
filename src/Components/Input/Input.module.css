@@ -1,0 +1,30 @@
+.inputForm {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type='text'],
+input[type='tel'],
+input[type='date'],
+textarea {
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: inset 0px 3px 5px 0px rgba(0, 0, 0, 0.4),
+    inset 0px 0px 7px 8px rgba(185, 184, 184, 0.4);
+  padding: 10px;
+  margin: 7px 0;
+}
+
+input[type='text']:hover,
+input[type='tel']:hover,
+input[type='date']:hover,
+textarea:hover {
+  filter: brightness(115%);
+}
+
+input[type='text']:active,
+input[type='tel']:active,
+input[type='date']:active,
+textarea:active {
+  filter: brightness(115%);
+}
