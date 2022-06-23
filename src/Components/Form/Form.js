@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './Form.module.css';
 import Input from '../Input/Input';
 import TextArea from '../TextArea/TextArea';
+import Button from '../Button/Button';
 import logo from '../../logo.svg';
 
 class Form extends React.Component {
@@ -73,8 +74,18 @@ class Form extends React.Component {
             </div>
           </div>
           <div className={styles.buttons}>
-            <input type='submit' value='Submit' title='submit form' />
-            <input type='reset' value='Cancel' title='reset all input fields' />
+            <Button
+              className={styles.submitButton}
+              type='submit'
+              label='Submit'
+              onClick={this.handleSave}
+            />
+            <Button
+              className={styles.resetButton}
+              type='reset'
+              label='Reset'
+              onClick={this.handleReset}
+            />
           </div>
           <div className={styles.image}>
             <img src={logo} className={styles.Applogo} alt='logo' />
